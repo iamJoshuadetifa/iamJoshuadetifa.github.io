@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmAssist</title>
+    <style>
+        body{
+            background-color: blueviolet;
+        }
+        .central{
+            text-align: center;
+        }
+        .inside{
+            color: white;
+            font-size: 50px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .heading{
+            color: white;
+            text-align: center;
+        }
+        #scenario{
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header class="heading">
+        <h1 style="font-size:135px">e-pharm</h1>
+        <p style="font-size:25px;"><i>Type in an ailment into the search box in lower-case for example 'malaria','thyphoid', 'small pox' etc</i></p>
+    </header>
+        <div class="central">
+        <input type="text" id="scenario" placeholder="Type ailment in lower-case...eg. 'malaria'" size="50" />
+        <button type="button" id="clicker">Prescribe</button>
+        <!--<input type="submit" id="clicker"/>-->
+        <div class="inside">
+        <p id="answer"></p>
+        </div>
+        </div>
+        <script>
+            document.getElementById("clicker").onclick = function() {
+                var scenario = document.getElementById('scenario').value; 
+                var answers = {
+                    "malaria": "chloroquinne, Coartem, Lonart 80/480 20/120, Quinine",
+                    "diarrhoea": "Lomotil, Imodium, ORS, Zinc, Bioflor, Fiorinal",
+                    "catarrh": "Actifed, Vitamin C, Loratidine, Piriton",
+                    "thyphoid": "Augmentin, Zinnat, Ciprotab, Tarivid",
+                    "meningitis": "Cefotaxime, Vancomycine, Ceftriaxone, Rocephin, Mesotrione",
+                    "yellow fever": "Yellow Fever Vaccine",
+                    "common cold": "Actifed, Procold, Flu J",
+                    "measles": "7 Keys to power, Calamine Lotion, Virest",
+                    "conjuctivitis": "Elisca, Chloraphenicol",
+                    "small pox": "7 Keys to power, Calamine Lotion, Virest",
+                    "chicken pox": "7 Keys to power, Calamine Lotion, Virest",
+                    default:"Sorry we dont have prescriptions for your entry now. We will update our records soon"
+                }
+                var str = answers[scenario];
+                if (str) {
+                    document.getElementById("answer").innerHTML = str;
+                }
+            };
+     </script>
+</body>
+</html>
