@@ -1,0 +1,31 @@
+body {
+background-image:url("Counter Image.jpg");
+background-size: cover;
+font-family: footlight mt light, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+text-align: center;
+font-weight: bold;
+}
+h1 {
+color: white;
+}
+h2 {
+    color: yellow;
+}
+button {
+    background-color:red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:yellow;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+}
+#increment-btn {
+    background-color: darkred;
+}
+#save-btn {
+    background-color: darkgreen;
+}
+#save-el {
+    color: #ffffff
+}
