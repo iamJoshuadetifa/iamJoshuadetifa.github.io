@@ -33,34 +33,54 @@
     </header>
         <div class="central">
         <input type="text" id="scenario" placeholder="Type ailment in lower-case...eg. 'malaria'" size="50" />
-        <button type="button" id="clicker">Prescribe</button>
+        <button type="button" id="clicker" onclick="content()">Prescribe</button>
         <!--<input type="submit" id="clicker"/>-->
         <div class="inside">
         <p id="answer"></p>
         </div>
         </div>
         <script>
-            document.getElementById("clicker").onclick = function() {
-                var scenario = document.getElementById('scenario').value; 
-                var answers = {
-                    "malaria": "chloroquinne, Coartem, Lonart 80/480 20/120, Quinine",
-                    "diarrhoea": "Lomotil, Imodium, ORS, Zinc, Bioflor, Fiorinal",
-                    "catarrh": "Actifed, Vitamin C, Loratidine, Piriton",
-                    "thyphoid": "Augmentin, Zinnat, Ciprotab, Tarivid",
-                    "meningitis": "Cefotaxime, Vancomycine, Ceftriaxone, Rocephin, Mesotrione",
-                    "yellow fever": "Yellow Fever Vaccine",
-                    "common cold": "Actifed, Procold, Flu J",
-                    "measles": "7 Keys to power, Calamine Lotion, Virest",
-                    "conjuctivitis": "Elisca, Chloraphenicol",
-                    "small pox": "7 Keys to power, Calamine Lotion, Virest",
-                    "chicken pox": "7 Keys to power, Calamine Lotion, Virest",
-                    default:"Sorry we dont have prescriptions for your entry now. We will update our records soon"
-                }
-                var str = answers[scenario];
-                if (str) {
-                    document.getElementById("answer").innerHTML = str;
-                }
-            };
+        function content(){  
+        let medications = document.getElementById("scenario").value;
+        switch (medications) {
+        case "malaria": 
+        document.getElementById("answer").textContent = "chloroquinne, Coartem, Lonart 80/480 20/120, Quinine";
+        break;
+        case "diarrhoea": 
+        document.getElementById("answer").textContent = "Lomotil, Imodium, ORS, Zinc, Bioflor, Fiorinal";
+        break;
+        case "catarrh": 
+        document.getElementById("answer").textContent = "Actifed, Vitamin C, Loratidine, Piriton";
+        break;
+        case "thyphoid": 
+        document.getElementById("answer").textContent = "Augmentin, Zinnat, Ciprotab, Tarivid";
+        break;
+        case "meningitis": 
+        document.getElementById("answer").textContent = "Cefotaxime, Vancomycine, Ceftriaxone, Rocephin, Mesotrione";
+        break;
+        case "yellow fever": 
+        document.getElementById("answer").textContent = "Yellow Fever Vaccine";
+        break;
+        case "common cold":
+        document.getElementById("answer").textContent = "Actifed, Procold, Flu J";
+        break;
+        case "measles": 
+        document.getElementById("answer").textContent = "7 Keys to power, Calamine Lotion, Virest";
+        break;
+        case "conjuctivitis":
+        document.getElementById("answer").textContent = "Elisca, Chloraphenicol";
+        break;
+        case "small pox": 
+        document.getElementById("answer").textContent = "7 Keys to power, Calamine Lotion, Virest";
+        break;
+        case "chicken pox": 
+        document.getElementById("answer").textContent = "7 Keys to power, Calamine Lotion, Virest";
+        break;
+        default:
+        document.getElementById("answer").textContent = "Sorry we dont have prescriptions for your entry now. We will update our records soon";
+        break;
+    }
+}
      </script>
 </body>
 </html>
