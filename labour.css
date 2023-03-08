@@ -1,0 +1,18 @@
+div{
+    text-align:center;
+}
+nav{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+    text-align: center;
+    margin: 25px;
+}
+header{
+    text-align: center;
+}
+h1{
+    color:red;
+}
+h6{
+    text-align: center;
+    color:green;
+}
