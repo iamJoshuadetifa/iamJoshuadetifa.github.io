@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--<h1 style="color:red;">Javascript Can Change HTML Content.</h1>
+    <p id="demo">Nma, Sarian and Mrs.Irene are Full-Stack Web Development Students.</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Nma, Precious and Mrs.Irene are now full flegged full-stack website development professionals!"'>Click Me!</button>
+    <!--Second Javascript Example
+    <p id="sarian">Tobe is tall, dark and handsome.</p>
+    <button type="button" onclick='document.getElementById("sarian").innerHTML="Mr.Joshua is wearing a tie today."'>Click Me!</button>
+    <!--Third Javascript Example
+    <p>Javascript can change src attribute of an image.</p>
+    <img id="myImage" src="bulb off.png" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='bulb on.png'">Switch On!</button>
+    <button onclick="document.getElementById('myImage').src='bulb off.png'">Switch Off!</button>
+    <!--11th October, 2022.
+    <p id="sarian"></p>  
+    <!--<script>
+        document.getElementById("sarian").innerHTML= 5 + 6;
+    </script> 
+    <!--How to use .innerHTML
+    <p id="nma"></p>
+    <script>
+        document.getElementById("nma").innerHTML= "Bro.Joshua";
+    </script>
+    <!--How to use document.write
+    <script>
+        document.write("Madam Irene");
+        document.write(22 + 2);
+    </script>
+    <!--How to use window.alert
+    <script>
+        alert("Madam Irene, Nma and Precious loves abacha!");
+    </script>
+    <!--How to use console.log
+    <script>
+        console.log("I love to read books");
+    </script>
+    <h1>I love Jesus</h1>
+    <p>Let me print this</p>
+    <button onclick="window.print()">Print page</button>
+    Javascript statements
+    <p id="js"></p>
+    <script>
+        let nma, sarian, madam_irene;
+        nma = 15;
+        sarian = 116;
+        madam_irene = nma + sarian;
+        document.getElementById("js").innerHTML = madam_irene;
+    </script>
+    <!--12th October 2022 Variables
+    <p id="inwadiani"></p>
+    <script>
+        let x;
+        x = 10;
+        document.getElementById("inwadiani").innerHTML = x;
+    </script>
+    <!--12th October 2022 Operators: Arithmetic
+    <p id="sarian1"></p>
+    <script>
+        document.getElementById("sarian1").innerHTML = 15 + 16;
+    </script>
+    <!--12th October 2022 Operators: Assignment
+    <p id="nma1"></p>
+    <script>
+        let u;
+        u = 16;
+        document.getElementById("nma1").innerHTML = u;
+    </script>
+   <!--12th October 2022 Using Expressions To Compute Values in JavaScript
+   <p id="samuel"></p>
+   <script>
+       document.getElementById("samuel").innerHTML = "Joshua" + " " + "Adetifa";
+   </script>
+   <!--12th October 2022 JavaScript keywords var and let 
+   <p id="chuka"></p>
+   <script>
+       let a, b;
+       a = 11 + 24;
+       b = a + 42;
+       document.getElementById("chuka").innerHTML = a + b;
+   </script>
+   <p id="victor"></p>
+   <script>
+       //comments test
+       var c, d;
+       c = 10 / 5;
+       d = c * 20;
+       document.getElementById("victor").innerHTML = d - c;
+   </script>
+   <!--12th October 2022 $ as a variable
+   <p id="something"></p>
+   <script>
+       let $ = "Naira";
+       document.getElementById("something").innerHTML = $;
+   </script>
+   <script>
+       let _100 = "Ten";
+   </script>
+   <!--17th Of October, 2022 Using Var in Javascript
+   <p id="tobe"></p>
+   <script>
+    var j = 5;
+    var y = 6;
+    var z = j + y;
+    document.getElementById("tobe").innerHTML = "The value of z: " + z;
+    </script>
+    <!--Using Let in Javascript
+    <p id="ewere"></p>
+    <script>
+      let we = 18;
+      let is = 21;
+      let off = we + is;
+      document.getElementById("ewere").innerHTML = "The value of off: " + off;
+    </script>
+    <!--Using nothing to create javascript variables
+    <p id="mummy"></p>
+    <script>
+       garri = 45;
+       edikaikong = 35;
+       efo = garri + edikaikong;
+       document.getElementById("mummy").innerHTML = "efo is: " + efo;
+    </script>
+    <!--Using Const and Let in JavaScript Variables
+    <p id="footer"></p>
+    <script>
+        const dollar = 760;
+        const pounds = 840;
+        // the sum of the equivalent of one naira to a pound and one naira to a dollar
+        let naira = dollar + pounds;
+        document.getElementById("footer").innerHTML = "naira is: " + naira;
+    </script>
+    <!--Declare and Output a variable
+    <p id="phone"></p>
+    <script>
+        var classNumber = "I am in JS-400 level";   
+        //Output variable in HTML
+        document.getElementById("phone").innerHTML = classNumber;
+    </script>
+    <p id="naija"></p>
+    <script>
+        //Declare var
+        let r = 20;
+        {//Redeclare var
+        let r = 16;}
+        document.getElementById("naija").innerHTML = r;
+    </script>
+    <p id="template"></p>
+    <script>
+        childName = "tata"
+        document.getElementById("template").innerHTML = childName;
+        var childName;
+    </script>
+    <p id="franklin"></p>
+    <script>
+        const tallest;
+        const tallest = 56;
+        document.getElementById("franklin").innerHTML = tallest;
+    </script>
+    <p id="stations"></p>
+    <script>
+        const chukwu = 90;
+        {
+        const chukwu = 70;
+        }
+        document.getElementById("stations").innerHTML = chukwu;
+    </script>
+    <p id="dollars"></p>
+    <script>
+        var money = "Pounds Sterling";
+        money = "Dirams";
+        document.getElementById("dollars").innerHTML = money;
+    </script>
+    <script>
+       /* var p = 10 ;
+        var w = 15;
+        var t = 6;
+        ///p = (p + w);
+        p -= w -= t;
+        document.write(p);*/
+    </script>
+    
+    <script>
+        var k = 9;
+        var o = 10;
+        var n = 3;
+        k -= o -= n;
+        document.write(k);
+    </script>
+     <script>
+        var l = 9;
+        var m = 10;
+        var v = 3;
+        l *= m *= v;
+        document.write(l);
+    </script>-->
+    <p id="remi"></p>
+    <script>
+        var x = myFunction(8, 6)
+        document.getElementById("remi").innerHTML = x
+
+        function myFunction(b, c) {
+            return b * c
+        }
+    </script>
+    <!--<p id="dremo"></p>-->
+    <script>
+        function christopher (s, n)
+        {
+          return s + n;  
+        }
+
+        x = christopher (37, 70);
+        document.write(x);
+    </script>
+    <h1 id="ketu"></h1>
+    <script>
+    const ailment = malaria;
+
+    if (ailment == malaria){
+        document.write("Artemeter");
+    }else if (ailment == catarrh){
+        document.write("Vitamin C");
+    }else {
+        document.write("Not Captured");
+    }
+    </script>
+
+    <p id="cipro"></p>
+    <script>
+        const schools = new Map([
+            ["nazareth", 44],
+            ["early life", 41],
+            ["loral", 42],
+            ["s-tee", 40]
+        ])
+        schools.delete("s-tee");
+        document.getElementById("cipro").innerHTML = schools.has("s-tee");
+    </script>
+</body>
+</html>
